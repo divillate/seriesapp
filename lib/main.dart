@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'SeriesApp',
       initialRoute: '/home',
       routes: {
-        '/home': (_) => SerieScreen(),
+        '/home': (_) => HomeScreen(),
         '/details': (_) => DetailsScreen()
       },
     );

@@ -15,11 +15,13 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
         backgroundColor: SeriesAppColors.black,
-        body: Column(
-          children: [
-            CardSwiper()
-            //listado horizontal de peliculas
-          ],
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              //listado horizontal de peliculas
+              SerieSlider(),
+            ],
+          ),
         ));
   }
 }
