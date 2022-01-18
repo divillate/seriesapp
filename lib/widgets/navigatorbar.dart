@@ -7,11 +7,12 @@ class NavigatorBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      currentIndex: 3,
       backgroundColor: SeriesAppColors.black,
       unselectedItemColor: SeriesAppColors.white,
       selectedItemColor: SeriesAppColors.primary,
       type: BottomNavigationBarType.fixed,
-      items: <BottomNavigationBarItem>[
+      items: [
         BottomNavigationBarItem(icon: Icon(Icons.access_alarm), label: 'Home'),
         BottomNavigationBarItem(
             icon: Icon(Icons.access_alarm), label: 'Favorites'),

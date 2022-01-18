@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:seriesapp/screens/screens.dart';
-import 'package:seriesapp/screens/serie_screen.dart';
+import 'package:seriesapp/screens/tabs_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'SeriesApp',
       initialRoute: '/home',
       routes: {
-        '/home': (_) => HomeScreen(),
+        '/home': (_) => TabsScreen(),
         '/details': (_) => DetailsScreen()
       },
     );
