@@ -39,13 +39,15 @@ class _SellAll extends StatelessWidget {
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        Text(
-          'Sell all',
-          style: TextStyle(
-              color: SeriesAppColors.primary,
-              fontSize: 20,
-              fontWeight: FontWeight.bold),
-          textAlign: TextAlign.end,
+        Container(
+          child: Text(
+            'Sell all',
+            style: TextStyle(
+                color: SeriesAppColors.primary,
+                fontSize: 20,
+                fontWeight: FontWeight.bold),
+            textAlign: TextAlign.end,
+          ),
         ),
         Icon(
           Icons.arrow_forward_ios_rounded,

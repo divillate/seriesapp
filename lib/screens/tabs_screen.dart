@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:seriesapp/constants/theme.dart';
+import 'package:seriesapp/screens/favorite_screen.dart';
 import 'package:seriesapp/screens/home_screen.dart';
+import 'package:seriesapp/screens/recents_screen.dart';
+import 'package:seriesapp/screens/serie_screen.dart';
 import 'package:seriesapp/widgets/widgets.dart';
 
 class TabsScreen extends StatelessWidget {
@@ -52,8 +55,14 @@ class _Paginas extends StatelessWidget {
           child: HomeScreen(),
         ),
         Container(
-          color: Colors.green,
+          child: FavoriteScreen(),
         ),
+        Container(
+          child: RecentsScreen(),
+        ),
+        Container(
+          child: SerieScreen(),
+        )
       ],
     );
   }
